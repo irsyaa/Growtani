@@ -58,7 +58,7 @@ https://templatemo.com/tm-562-space-dynamic
             <!-- ***** Menu Start ***** -->
             <ul class="nav">              <li class="scroll-to-section"><a href="#services">Marketplace</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Informasi</a></li>
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Login</a></div></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="./login/login.php">Login</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
