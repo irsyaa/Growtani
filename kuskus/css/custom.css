@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-primary-alt,
+.nav-link.active {
+  color: #ff4a57 !important;
+}
+
+@media (min-width: 759px) {
+  .jumbotron-left-padding {
+    padding: 140px 0;
+  }
+}
+
+.bg-custom-primary {
+  background-color: #ff4a57;
+}
+
+.rounded-btn {
+  border: 2px solid #ff4a57;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border-width: 1px;
+  color: #ff4a57;
+  transition: 0.1s;
+  font-size: 25px;
+}
+
+.rounded-btn:hover {
+  background-color: #ff4a57;
+  color: white;
+}
+
+.jumbotron-title {
+  font-size: 50px;
+  color: black;
+  line-height: 70px;
+}
+
+.socmed-list {
+  padding: 0;
+}
+
+.socmed-list li {
+  display: inline-block;
+  margin-right: 15px !important;
+}
+
+.zoom-on-hover {
+  transition: 0.2s;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.2);
+}
