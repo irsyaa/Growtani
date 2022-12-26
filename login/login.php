@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -19,6 +18,8 @@
 
     <!-- Custom styles for this template-->
     <link href="../assets/css/style2.css" rel="stylesheet">
+    <link href="../assets/css-bootstrap/bootstrap.css" rel="stylesheet">
+    
 
 </head>
 
@@ -41,18 +42,40 @@
                                         <h1 class="h4 text-gray-900 mb-4">Welcome to Kuskus !</h1>
                                     </div>
                                     <form method="POST" action="ceklogin.php" class="user">
+                                        <?php if (isset($_GET['error']))
+                                        {?>
+                                        <div class="alert alert-danger" role="alert">
+                                        <?=$_GET['error']?> 
+                                        </div>
+                                        
+                                        <?php } ?>
+                                        
+                                    
                                     
                                         <!-- <input type="hidden" name="Login" value="true"></input> -->
 
                                         <div class="form-group">
-                                            <input name="user" type="text" class="form-control form-control-user"
-                                                id="ussername" aria-describedby="emailHelp"
-                                                placeholder="Enter Your Ussername...">
+                                            <input 
+                                            name="username" type="text" 
+                                            class="form-control form-control-user"
+                                            id="username" aria-describedby="emailHelp"
+                                            placeholder="Enter Your Ussername...">
                                         </div>
                                         <div class="form-group">
-                                            <input name="pass" type="password" class="form-control form-control-user"
+                                            <input name="password" type="password" class="form-control form-control-user"
                                                 id="password" placeholder="Password">
                                         </div>
+
+                                        <div class="form-group">
+                                        <select class="form-select mb-3" 
+                                        id="floatingSelect" aria-label="Floating label select example"
+                                        name="role">
+                                            <option selected value="pendana">Pendana</option>
+                                            <option value="pengusaha">Pengusaha</option>
+                                            <option value="admin">Admin</option>
+                                        </select>
+                                        </div>
+                                        
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">

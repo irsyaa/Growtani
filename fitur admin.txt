@@ -1,0 +1,29 @@
+admin
+
+Laporan
+-Laporan Keuangan Pengeluaran
+
+Validasi Akun :
+-Pendana
+-Pengusaha 
+
+Validasi Dokumen 
+-Pendana
+-Pengusaha
+
+Verifikasi Peminjaman
+
+Usaha
+-Usaha yang sudah berjalan
+-Usaha yang masih di danai
+
+Terlambat Bayar
+Denda Pengusaha
+
+Managemen akun
+
+
+ 
+
+
+
