@@ -38,10 +38,9 @@ https://templatemo.com/tm-562-space-dynamic
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
-            <ul class="nav">              <li class="scroll-to-section"><a href="#services">Marketplace</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Informasi</a></li>
-              <li class="scroll-to-section"><a href="#blog">Dampak Sosial</a></li> 
-              <li class="scroll-to-section"><a href="#contact">Hubungi Kami</a></li> 
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#services">Marketplace</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Informasi</a></li> 
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Login</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
@@ -122,5 +121,6 @@ https://templatemo.com/tm-562-space-dynamic
 <div class="container">
 <button type="button" class="btn btn-primary btn-sm">Small button</button>
 </div>
+
 </body>
 </html>

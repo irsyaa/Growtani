@@ -1,10 +1,6 @@
 <?php 
-
-$con = mysqli_connect( "localhost","root","","growtani");
-
-$result = mysqli_query($con,"SELECT * FROM  peminjam")
-
-
+require 'functions.php';
+$user = query("SELECT * FROM peminjam");
 
 ?>
 
@@ -48,8 +44,8 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Frowzzz=\\
-                    <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">GrowTani
+                    </div>
             </a>
 
             <!-- Divider -->
@@ -80,9 +76,9 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         
-                        <a class="collapse-item" href="buttons.html">Pendana</a>
-                        <a class="collapse-item" href="cards.html">Pengusaha</a>
-                        <a class="collapse-item" href="cards.html">Peminjaman</a>
+                        <a class="collapse-item" href="pendana.php">Pendana</a>
+                        <a class="collapse-item" href="pengusaha.php">Pengusaha</a>
+                        <a class="collapse-item" href="peminjaman.php">Peminjaman</a>
                     </div>
                 </div>
             </li>
@@ -91,7 +87,7 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="terlambat.php"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Terlambat Bayar</span>
@@ -194,18 +190,9 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
+                                
+                               
+                                
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -254,7 +241,7 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php while( $row = mysqli_fetch_assoc($result) ) : ?>
+                                        <?php foreach ($user as $row) : ?>
                                         <tr>
                                             <td><?php echo $row["name"]; ?></td>
                                             <td><?php echo $row["email"]; ?></td>
@@ -263,7 +250,7 @@ $result = mysqli_query($con,"SELECT * FROM  peminjam")
                                             <td><?php echo $row["alamat_permanen"]; ?></td>
                                             <td><?php echo $row["tanggal_lahir"]; ?></td>
                                         </tr>
-                                      <?php endwhile; ?>
+                                      <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>
